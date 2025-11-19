@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+
+    tools:context=".controller.Colores">
+
+    <ImageView
+        android:onClick="sonarYellow"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/yellow" />
+    <ImageView
+        android:onClick="sonarOrange"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="right"
+        android:layout_margin="20dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/orange" />
+    <ImageView
+        android:onClick="sonarGreen"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity=""
+        android:layout_margin="20dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/green" />
+    <ImageView
+        android:onClick="sonarRed"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="right"
+        android:layout_margin="20dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/red" />
+    <ImageView
+        android:onClick="sonarBlue"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/blue" />
+
+</LinearLayout>

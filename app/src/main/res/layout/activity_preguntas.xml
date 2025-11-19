@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".controller.Preguntas">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nivel_Uno"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pregunta_uno"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+
+        <RadioGroup
+            android:id="@+id/rg_animals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+            <RadioButton android:id="@+id/rb_koala" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/koala_en"/>
+            <RadioButton android:id="@+id/rb_kangaroo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kanguro"/>
+            <RadioButton android:id="@+id/rb_snake" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/snake"/>
+            <RadioButton android:id="@+id/rb_monkey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/monkey"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_check_animals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnPreguntaUno"/>
+
+        <TextView
+            android:id="@+id/tv_result_animals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:textStyle="italic"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nivel_dos"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pregunta_dos"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+
+        <LinearLayout
+            android:id="@+id/ll_colors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+            <CheckBox android:id="@+id/cb_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/color_blue_en"/>
+            <CheckBox android:id="@+id/cb_red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/color_red_en"/>
+            <CheckBox android:id="@+id/cb_yellow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/color_yellow_en"/>
+            <CheckBox android:id="@+id/cb_green" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/color_green_en"/>
+            <CheckBox android:id="@+id/cb_orange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/color_orange_en"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_check_colors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnPreguntaDos"/>
+
+        <TextView
+            android:id="@+id/tv_result_colors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:textStyle="italic"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nivel 3: Frutas (SANDÍA) 🍉"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Cuál de las siguientes palabras traduce SANDÍA al inglés?"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+
+        <Spinner
+            android:id="@+id/spinner_fruits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:entries="@array/fruit_options"/>
+
+        <Button
+            android:id="@+id/btn_check_fruits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comprobar Frutas"/>
+
+        <TextView
+            android:id="@+id/tv_result_fruits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:textStyle="italic"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nivel 4: Números (CERO, DOS, CINCO, NUEVE) 🔢"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecciona TODOS los números: CERO, DOS, CINCO y NUEVE."
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+
+        <LinearLayout
+            android:id="@+id/ll_numbers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+            <CheckBox android:id="@+id/cb_zero" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Zero"/>
+            <CheckBox android:id="@+id/cb_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="One"/>
+            <CheckBox android:id="@+id/cb_two" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Two"/>
+            <CheckBox android:id="@+id/cb_five" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Five"/>
+            <CheckBox android:id="@+id/cb_six" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Six"/>
+            <CheckBox android:id="@+id/cb_nine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nine"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_check_numbers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comprobar Números"/>
+
+        <TextView
+            android:id="@+id/tv_result_numbers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:textStyle="italic"/>
+
+    </LinearLayout>
+</ScrollView>

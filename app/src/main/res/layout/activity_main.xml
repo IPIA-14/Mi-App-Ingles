@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.MainActivity"
+    android:background="@color/amarillo">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="@string/appName"
+            android:textSize="35sp"
+            android:gravity="center"
+            android:fontFamily="sans-serif-condensed"
+            android:background="@color/azul"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/img_3" />
+
+        <Button
+            android:onClick="iniciar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:backgroundTint="@color/purple"
+            android:text="@string/aprender" />
+
+        <Button
+            android:onClick="jugar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:backgroundTint="@color/purple"
+            android:text="@string/jugar" />
+
+        <Button
+            android:onClick="dialogos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:backgroundTint="@color/purple"
+            android:text="@string/alert" />
+
+        <Button
+            android:onClick="libreria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:backgroundTint="@color/purple"
+            android:text="@string/libreria" />
+        <Button
+            android:onClick="preguntas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:backgroundTint="@color/purple"
+            android:text="@string/preguntas" />
+
+    </LinearLayout>
+
+</ScrollView>

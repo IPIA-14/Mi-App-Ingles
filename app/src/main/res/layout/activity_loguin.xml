@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/amarillo"
+    android:padding="16dp"
+    tools:context=".controller.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        tools:context=".Menu">
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:padding="40dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/bienvenido"
+            android:textColor="@color/white"
+            android:background="@color/black"
+            android:textSize="36sp"
+            android:gravity="center"
+            android:fontFamily="sans-serif-medium" />
+
+        <EditText
+            android:id="@+id/edNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:hint="@string/nombre"   />
+
+        <EditText
+            android:id="@+id/edEdad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:hint="@string/apellido"   />
+
+        <EditText
+            android:id="@+id/edNickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:hint="@string/nickname"   />
+
+        <EditText
+            android:id="@+id/edColegio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:hint="@string/edad"   />
+
+        <EditText
+            android:id="@+id/edApellido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:hint="@string/colegio"   />
+
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="@string/genero"
+            android:textColor="@color/black"
+            android:textSize="36sp"
+            android:gravity="center"
+            android:fontFamily="sans-serif-medium" />
+
+        <RadioGroup
+            android:id="@+id/rgGenero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical"/>
+
+        <RadioButton
+            android:id="@+id/rbFemenino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="F" />
+
+        <RadioButton
+            android:id="@+id/rbMasculino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="M" />
+        />
+
+        <Button
+            android:onClick="loguinNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:backgroundTint="@color/purple"
+            android:text="@string/enviar" />
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+

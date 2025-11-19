@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">MyAppJuanIpia</string>
+    <string name="titulo">Hola mundo</string>
+    <string name="appName">My app inglish</string>
+    <string name="entrar">Ingresar</string>
+    <string name="aprender">Aprender</string>
+    <string name="jugar">Jugar</string>
+    <string name="colores">Colores</string>
+    <string name="numeros">Numeros</string>
+    <string name="animales">Animales</string>
+    <string name="frutas">Frutas</string>
+    <string name="one">One</string>
+    <string name="two">Two</string>
+    <string name="three">Three</string>
+    <string name="four">Four</string>
+    <string name="five">Five</string>
+    <string name="six">Six</string>
+    <string name="Seven">Seven</string>
+    <string name="eight">Eight</string>
+    <string name="nine">Nine</string>
+    <string name="ten">Ten</string>
+    <string name="cherry">Cherry</string>
+    <string name="orange">Orange</string>
+    <string name="watermelon">Watermelon</string>
+    <string name="strawberry">Strawberry</string>
+    <string name="mango">Mango</string>
+    <string name="yellow">Yellow</string>
+    <string name="orangeFruit">Orange</string>
+    <string name="green">Green</string>
+    <string name="red">Red</string>
+    <string name="blue">Blue</string>
+    <string name="pig">Pig</string>
+    <string name="hen">Hen</string>
+    <string name="duck">Duck</string>
+    <string name="sheep">Sheep</string>
+    <string name="dog">Dog</string>
+    <string name="pregunta1">Pregunta 1</string>
+    <string name="ask1">Ask1) Fruit: Apple</string>
+    <string name="ask2">Ask2) Num: two</string>
+    <string name="ask3">Ask3) Animal: Sheep</string>
+    <string name="ask4">Ask4) Color: blue</string>
+    <string name="ask5">Ask5) Fruit: uva </string>
+    <string name="gameover"> Felicidades, Terminaste el juego </string>
+    <string name="inicio">Regresar al inicio</string>
+    <string name="alert">Alertas</string>
+    <string name="libreria">Libreria</string>
+    <string name="preguntas">¨Preguntas</string>
+    <string name="alerDial">Alerta y dialogos</string>
+    <string name="alert1">Alerta 1</string>
+    <string name="alert2">Alerta 2</string>
+    <string name="alert3">Alerta 3</string>
+    <string name="alert4">Alerta 4</string>
+
+    <string name="app_title">EnglishGame</string>
+    <string-array name="fruit_options">
+        <item>Selecciona una fruta...</item>
+        <item>Strawberry</item>
+        <item>Cherry</item>
+        <item>Mango</item>
+        <item>Watermelon</item>
+    </string-array>
+
+
+    <string name="nivel_Uno">Nivel 1: Animales (CANGURO) 🦘</string>
+    <string name="pregunta_uno">¿Cuál es la traducción al inglés de la palabra CANGURO?</string>
+    <string name="btnPreguntaUno">Comprobar Animales</string>
+
+    <string name="nivel_dos">Nivel 2: Colores (ROJO, AMARILLO, NARANJA) 🎨</string>
+    <string name="pregunta_dos">Selecciona TODOS los colores que aparecen en la lista: ROJO, AMARILLO y NARANJA.</string>
+    <string name="btnPreguntaDos">Comprobar Colores</string>
+
+    <string name="koala_en">Koala</string>
+    <string name="kanguro">kanguro</string>
+    <string name="snake">Snake</string>
+    <string name="monkey">Monkey</string>
+    <string name="color_blue_en">Blue</string>
+    <string name="color_red_en">REd</string>
+    <string name="color_yellow_en">Yellow</string>
+    <string name="color_green_en">Green</string>
+    <string name="color_orange_en">Orange</string>
+
+    <string name="bienvenido">Bienvenido</string>
+    <string name="apellido">Ingresa tu apelllido</string>
+    <string name="nombre">Ingresa tu nombre</string>
+    <string name="nickname">Ingresa tu apodo</string>
+    <string name="edad">Ingresa tu edad</string>
+    <string name="colegio">Ingresa tu colegio</string>
+    <string name="genero">Selecciona tu genero</string>
+    <string name="enviar">Ingresar</string>
+
+
+
+</resources>

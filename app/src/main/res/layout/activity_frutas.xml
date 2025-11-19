@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".controller.Frutas">
+
+    <ImageView
+        android:onClick="sonarCherry"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:src="@drawable/cherry"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="75dp" />
+
+    <ImageView
+        android:onClick="sonarOrange_futa"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="right"
+        android:layout_margin="20dp"
+        android:src="@drawable/orange_fruit"
+        tools:layout_editor_absoluteX="244dp"
+        tools:layout_editor_absoluteY="199dp" />
+
+    <ImageView
+        android:onClick="sonarStrawberry"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:src="@drawable/strawberry"
+        tools:layout_editor_absoluteX="244dp"
+        tools:layout_editor_absoluteY="450dp" />
+
+    <ImageView
+        android:onClick="sonarWstermelon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="left"
+        android:layout_margin="20dp"
+        android:src="@drawable/watermelon"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="350dp" />
+
+    <ImageView
+        android:onClick="sonarMango"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:src="@drawable/mangoo"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="596dp" />
+
+</LinearLayout>
