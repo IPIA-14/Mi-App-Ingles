@@ -16,7 +16,7 @@ public class ConexionBd extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
 
-    db.execSQL("CREATE TABLE DATOS(NOMBRE TEXT, APELLIDO TEXT, NICKNAME TEXT, EDAD TEXT, COLEGIO TEXT, GENERO TEXT)");
+    db.execSQL("CREATE TABLE DATOS(NOMBRE TEXT, APELLIDO TEXT, NICKNAME TEXT, EDAD TEXT, COLEGIO TEXT, GENERO TEXT, PUNTAJE TEXT)");
 
     }
 

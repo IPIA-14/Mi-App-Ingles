@@ -68,6 +68,13 @@
             android:layout_margin="40dp"
             android:backgroundTint="@color/purple"
             android:text="@string/preguntas" />
+        <Button
+            android:onClick="datos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:backgroundTint="@color/purple"
+            android:text="@string/bd" />
 
     </LinearLayout>
 

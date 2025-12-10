@@ -87,7 +87,7 @@
     <string name="colegio">Ingresa tu colegio</string>
     <string name="genero">Selecciona tu genero</string>
     <string name="enviar">Ingresar</string>
-
+    <string name="bd">Base de datos</string>
 
 
 </resources>

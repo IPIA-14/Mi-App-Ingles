@@ -40,5 +40,9 @@ public class MainActivity extends AppCompatActivity {
         Intent siguiente = new Intent(MainActivity.this, Preguntas.class);
         startActivity(siguiente);
     }
+    public  void datos(View view){
+        Intent siguiente = new Intent(MainActivity.this, MostrasDatosUsers.class);
+        startActivity(siguiente);
+    }
 }
 

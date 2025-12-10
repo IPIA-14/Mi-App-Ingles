@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyAppJuanIpia">
         <activity
+            android:name=".controller.MostrasDatosUsers"
+            android:exported="false" />
+        <activity
             android:name=".controller.MainActivity"
             android:exported="false" />
         <activity

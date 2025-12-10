@@ -22,7 +22,7 @@ public class Loguin extends AppCompatActivity {
 
 
     Manager manager;
-    EditText txtNombre, txtApellido, txtNickname,txtEdad, txtColegio;
+    EditText txtNombre, txtApellido, txtNickname,txtEdad, txtColegio, txtpuntaje;
     RadioGroup rgGenero;
     Button btenviar;
 
@@ -39,6 +39,7 @@ public class Loguin extends AppCompatActivity {
         txtColegio = findViewById(R.id.edColegio);
         rgGenero = findViewById(R.id.rgGenero);
         btenviar = findViewById(R.id.btnLoguin);
+        txtpuntaje = findViewById(R.id.edpuntaje);
 
         btenviar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,6 +51,7 @@ public class Loguin extends AppCompatActivity {
                 String nickname  = txtNickname.getText().toString();
                 String edad = txtEdad.getText().toString();
                 String colegio = txtColegio.getText().toString();
+                String puntaje = txtpuntaje.getText().toString();
 
                 int selectedId = rgGenero.getCheckedRadioButtonId();
 
@@ -62,11 +64,11 @@ public class Loguin extends AppCompatActivity {
                 String genero = selectedRadioButton.getText().toString();
 
                 //PASAMOS LOS DATOS AL POJO
-                Datos datos = new Datos(nombre, apellido, nickname, edad, colegio, genero);
+                Datos datos = new Datos(nombre, apellido, nickname, edad, colegio, genero, puntaje);
                 //LLAMAMOS AL METODO INSEETAR LOS VALORES
                 long resul = manager.insertData(datos);
 
-                if (resul > 0){
+                if (resul != -1){
                     Toast.makeText(Loguin.this, "Datos insertados ✅", Toast.LENGTH_SHORT).show();
                     // Enviar a MainActivity
                     Intent ir = new Intent(Loguin.this, MainActivity.class);
