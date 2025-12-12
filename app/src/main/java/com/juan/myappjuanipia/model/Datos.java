@@ -7,8 +7,9 @@ public class Datos {
     private String nickname;
     private String edad;
     private String colegio;
+    private int puntaje;
     private String genero;
-    private String puntaje;
+
 
     public Datos(){
 
@@ -21,13 +22,18 @@ public class Datos {
         this.edad = edad;
         this.colegio = colegio;
         this.genero = genero;
-        this.puntaje = puntaje;
+        try {
+            this.puntaje = Integer.parseInt(puntaje);
+        } catch (Exception e) {
+            this.puntaje = 0;
+        }
+
     }
     //REALIZAMOS EL SET PARA AGREGAR DATOS
     public void setNombre(String nombre){
         this.nombre = nombre;
     }
-    public void setApeliido(String apellido){
+    public void setApellido(String apellido){
         this.apellido = apellido;
     }
     public void setNickname(String nickname){
@@ -42,8 +48,8 @@ public class Datos {
     public void setGenero(String genero ){
         this.genero = genero;
     }
-    public void setPuntaje(String puntaje ){
-        this.genero = puntaje;
+    public void setPuntaje(int puntaje ){
+        this.puntaje = puntaje;
     }
 
 //METODOS GET PARA OBTENER EL VALOR DE LAS VARIABL
@@ -66,20 +72,20 @@ public class Datos {
     public String getGenero(){
         return genero;
     }
-    public String getPuntaje(){
+    public int getPuntaje(){
         return puntaje;
     }
 
     @Override
     public String toString() {
-        return "Datos{" +
-                "nombre='" + nombre + '\'' +
-                ", apellido='" + apellido + '\'' +
-                ", nickname='" + nickname + '\'' +
-                ", edad='" + edad + '\'' +
-                ", colegio='" + colegio + '\'' +
-                ", genero='" + genero + '\'' +
-                ", puntaje='" + puntaje + '\'' +
-                '}';
+        return  "Nombre: " + nombre +
+                "\nApellido: " + apellido +
+                "\nNickname: " + nickname +
+                "\nEdad: " + edad +
+                "\nColegio: " + colegio +
+                "\nGénero: " + genero +
+                "\nPuntaje: " + puntaje;
     }
+
+
 }

@@ -7,26 +7,24 @@ import android.database.sqlite.SQLiteDatabase;
 
 import java.util.ArrayList;
 
-public class Manager{
+public class Manager {
 
     private ConexionBd conexionBd;
     private SQLiteDatabase db;
 
-    public  Manager (Context context){
-        //llamamos la conexion
+    public Manager(Context context) {
         conexionBd = new ConexionBd(context);
     }
-    //base de datos en modo escritura
-    public void openBdWr(){
+
+    public void openBdWr() {
         db = conexionBd.getWritableDatabase();
     }
-    public void openBdRd(){
-        db = conexionBd.getWritableDatabase();
+
+    public void openBdRd() {
+        db = conexionBd.getReadableDatabase();
     }
-    public void closeBd(){
-        db.close();
-    }
-    public long insertData(Datos datos){
+
+    public long insertData(Datos datos) {
         openBdWr();
         ContentValues values = new ContentValues();
         values.put("NOMBRE", datos.getNombre());
@@ -36,36 +34,36 @@ public class Manager{
         values.put("COLEGIO", datos.getColegio());
         values.put("GENERO", datos.getGenero());
         values.put("PUNTAJE", datos.getPuntaje());
-        long id = db.insert("DATOS", null, values);
-        // closeBd();
-        return id;
+        return db.insert("DATOS", null, values);
     }
 
-    public ArrayList<Datos> listarData(){
+    public void actualizarPuntaje(String nickname, int puntaje) {
+        openBdWr();
+        ContentValues values = new ContentValues();
+        values.put("PUNTAJE", puntaje);
+        db.update("DATOS", values, "NICKNAME = ?", new String[]{nickname});
+    }
+
+    public ArrayList<Datos> listarData() {
         openBdRd();
         ArrayList<Datos> lista = new ArrayList<>();
+        Cursor cursor = db.rawQuery("SELECT * FROM DATOS", null);
 
-        String sql = "SELECT * FROM DATOS";
-        Cursor cursor = db.rawQuery(sql, null);
-
-        if (cursor.moveToFirst()){
-            do{
-                Datos datos = new Datos();
-                datos.setNombre(cursor.getString(0));
-                datos.setApeliido(cursor.getString(1));
-                datos.setNickname(cursor.getString(2));
-                datos.setEdad(cursor.getString(3));
-                datos.setColegio(cursor.getString(4));
-                datos.setGenero(cursor.getString(5));
-                datos.setPuntaje(cursor.getString(6));
-                lista.add(datos);
-
-
-            } while(cursor.moveToNext());
-
+        if (cursor.moveToFirst()) {
+            do {
+                Datos d = new Datos();
+                d.setNombre(cursor.getString(0));
+                d.setApellido(cursor.getString(1));
+                d.setNickname(cursor.getString(2));
+                d.setEdad(cursor.getString(3));
+                d.setColegio(cursor.getString(4));
+                d.setGenero(cursor.getString(5));
+                d.setPuntaje(cursor.getInt(6));
+                lista.add(d);
+            } while (cursor.moveToNext());
         }
+
+        cursor.close();
         return lista;
     }
-
-
 }

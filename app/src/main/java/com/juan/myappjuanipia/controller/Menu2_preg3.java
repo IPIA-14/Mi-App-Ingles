@@ -1,17 +1,20 @@
 package com.juan.myappjuanipia.controller;
 
+
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.juan.myappjuanipia.R;
+
 
 public class Menu2_preg3 extends AppCompatActivity {
 
+    boolean respondida = false;
+
     MediaPlayer sonido;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,21 +22,23 @@ public class Menu2_preg3 extends AppCompatActivity {
         setContentView(R.layout.activity_menu2_preg3);
     }
 
+
     public void sonarCorrecto(View view) {
-        sonido = MediaPlayer.create(Menu2_preg3.this, R.raw.correcto);
-        sonido.start();
+        if (respondida) return;
+        respondida = true;
+        MostrasDatosUsers.sumarCorrecto();
 
-        sonido.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            @Override
-            public void onCompletion(MediaPlayer mp) {
-                Intent intent = new Intent(Menu2_preg3.this, Menu2_preg4.class);
-                startActivity(intent);
-            }
-        });
+        sonido = MediaPlayer.create(this, R.raw.correcto);
+        sonido.start();
+        sonido.setOnCompletionListener(mp -> startActivity(new Intent(this, Menu2_preg4.class)));
     }
+
+
     public void sonarInorrecto(View view) {
-        sonido = MediaPlayer.create(Menu2_preg3.this, R.raw.incorrecto);
+        if (respondida) return; // <---- no permitir volver a responder
+        respondida = true;
+        sonido = MediaPlayer.create(this, R.raw.incorrecto);
         sonido.start();
+        sonido.setOnCompletionListener(mp -> startActivity(new Intent(this, Menu2_preg4.class)));
     }
-
 }
